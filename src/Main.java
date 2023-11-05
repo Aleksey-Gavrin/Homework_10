@@ -48,14 +48,11 @@ public class Main {
 //    В качестве исходных данных используйте строку fullName и данные в ней — «Иванов Семён Семёнович».
 //    Выведите результат программы в консоль в формате: «Данные Ф. И. О. сотрудника — ...».
 
+
     public static void  task_3() {
         String fullName = "Иванов Семён Семёнович";
-        if (fullName.indexOf('ё') != -1) {
-            fullName = fullName.replace('ё', 'е');
-        }
-        if (fullName.indexOf('Ё') != -1) {
-            fullName = fullName.replace('Ё', 'Е');
-        }
+        fullName = fullName.replace('ё', 'е');
+        fullName = fullName.replace('Ё', 'Е');
         System.out.println("Данные Ф. И. О. сотрудника - " + fullName);
     }
 }
